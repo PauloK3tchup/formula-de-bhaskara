@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W95 calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <main>    
+        <div class="janela" id="FormularioMoment">
+
+            <div class="title">
+                <img src="icone calculadora.png" width="18" height="18" class="title" />
+                <p class="title">Multiplicar e Dividir</p>
+                <button>X</button>
+                <button>?</button>
+            </div>    
+
+            <div id="Calculo">
+                <label for="prim">Primeiro Número</label>
+                <input placeholder="Digite Aqui" type="number" name="Primeiro" id="prim"><br>
+                <label for="seg">Segundo Número</label>
+                <input placeholder="Digite Aqui" type="number" name="Segundo" id="seg">
+
+                <br><br>
+
+                <button class="Botão" id="Multiplicar" onclick="Multiplicar()">Multiplicar</button>
+                <button  class="Botão" id="Dividir" onclick="Dividir()">Dividir</button>
+
+                <br><br>
+
+                <div id="Resultado">Seu resultado aparecerá aqui</div>
+            </div>
+        </div>
+
+        <div class="janela" id="FormB">
+
+            <div class="title">
+                <img src="icone calculadora.png" width="18" height="18" class="title" />
+                <p class="title">Bhaskara</p>
+                <button>X</button>
+                <button>?</button>
+            </div>    
+
+            <div id="Calculo">
+                <label for="aB">Valor de <strong>a</strong></label><br>
+                <input placeholder="Digite Aqui" type="number" name="A" id="aB"><br>
+                <label for="bB">Valor de <strong>b</strong></label><br>
+                <input placeholder="Digite Aqui" type="number" name="B" id="bB"><br>
+                <label for="cB">Valor de <strong>c</strong></label><br>
+                <input placeholder="Digite Aqui" type="number" name="C" id="cB">
+
+                <br><br>
+
+                <button class="Botão" id="Bhaskara" onclick="Bhaskara()">Calcular</button>
+
+                <br><br>
+
+                <div id="ResultadoB">Seu resultado aparecerá aqui</div>
+            </div>
+        </div>
+
+        <div class="bonzi">
+            <img src="BonziSunglasses.gif" alt="Bonzi">
+            <div id="Bolha" onclick="bonzi()">
+            <div id="OTexto" class="bubble bubble-bottom-left">Clica em mim namoral</div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

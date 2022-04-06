@@ -1,0 +1,134 @@
+body{
+    background-image: url("fundo.jpg");   
+    background-color: #008080;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family:Tahoma;
+}
+
+button{
+    font-family:Tahoma;
+    margin:2px 2px 2px 0;
+    background:#C0C0C0;
+    border-width:1px;
+    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    padding: 5px;;
+    font-weight:bold;
+    text-align:center;
+}
+
+div.janela{
+    width: fit-content;
+    max-width: 250%;
+    height: auto;
+    background: #C0C0C0;
+    text-align: center;
+    padding: 10px;
+    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    border-style:solid;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+div#FormularioMoment{
+    position:absolute;
+    top: 20%;
+    left:20%;
+}
+
+div#FormB{
+    position:absolute;
+    top: 50%;
+    left:50%;
+}
+
+div.title{
+    height:18px;
+    width: 106.5%;
+    background:#000080;
+    color:#FFF;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+img.title{
+    float:left;
+}
+p.title{
+    margin:2px 0 0 1px;
+    float:left;
+    font-family:Tahoma;
+    font-weight:bold;
+    font-size:11px;
+}
+.title button{
+    margin:2px 2px 2px 0;
+    float:right;
+    width:14px;
+    height:13.5px;
+    background:#C0C0C0;
+    border-width:1px;
+    border-color:#FFFFFF #808080 #808080 #FFFFFF;
+    padding:0;
+    font-size:9px;
+    font-weight:bold;
+    font-family:Tahoma;
+    text-align:center;
+}
+
+div#Calculo{
+    padding: 10px;
+}
+
+div.bonzi img{
+    width: auto;
+    height: 25%;
+    position: absolute;
+    bottom: 8%;
+    right: 0%;
+}
+
+.bubble{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    width: 25%;
+    background: #fff;
+    border-radius: 40px;
+    padding: 24px;
+    text-align: center;
+    color: #000;
+    right: 0%;
+    top: -18%;
+}
+  
+.bubble-bottom-left:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 24px solid #fff;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #fff;
+    border-bottom: 20px solid transparent;
+    right: 25px;
+    bottom: -24px;
+}  
+
+div#Bolha{
+    opacity: 0%;
+    transition: 0.25s;
+    height: 250px;
+    width: 300px;
+    position: absolute;
+    bottom: 8%;
+    right: 0%;
+}
+
+div#Bolha:hover{
+    opacity: 100%;
+}
+
+/** Lembrar dos display: flex, do justify content e do align items **/
